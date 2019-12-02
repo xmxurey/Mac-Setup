@@ -1,15 +1,18 @@
 # 输入法
 
 ## 鼠鬚管 Squirrel
-```shell
+
+```text
 brew cask install squirrel
 ```
-```shell
+
+```text
 cd ~/Library/Rime
 wget https://raw.githubusercontent.com/rime/rime-double-pinyin/master/double_pinyin_flypy.schema.yaml
 ```
 
 新建文件 touch ~/Library/Rime/default.custom.yaml, 内容如下
+
 ```yaml
 # 以下的 default.custom.yaml 在全局范围内重新定义该组快捷键
 #
@@ -51,7 +54,9 @@ patch:
 ```
 
 ### 模糊音
+
 参照 [模糊音模板](https://gist.github.com/lotem/2320943) 修改 原yaml文件 speller/algebra
+
 ```yaml
 - erase/^xx$/
 - abbrev/^([a-z]).+$/$1/
@@ -65,7 +70,9 @@ patch:
 ```
 
 ### 外观设定
+
 squirrel.custom.yaml
+
 ```yaml
 patch:
 #  us_keyboard_layout: true                 # 键盘选项：应用美式键盘布局
@@ -110,5 +117,4 @@ patch:
 ```
 
 emoji 设置
-
 
